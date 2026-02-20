@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eyob Arega | Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Eyob Arega</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Hobbies</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero / Introduction Section -->
+  <section class="hero">
+<img src="myphoto.jpg.jpg" alt="Eyob Arega" style="width:150px;height:150px;border-radius:50%;">
+    <h1>Eyob Arega</h1>
+    <p>I am a 2nd-year Software Engineering student at AASTU University, passionate about web development, creating small projects, and learning new technologies.</p>
+   <button id="download-page" class="cv-button" style="margin-top: 15px;">
+  Download this Portfolio Page
+</button>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hi! I am Eyob, a software engineering student with a growing interest in web development and interactive projects. I enjoy creating beginner-friendly web apps, learning about emerging technologies, and making fun and useful projects.</p>
+    <h3>Skills</h3>
+    <ul class="skills">
+      <li>HTML & CSS</li>
+      <li>JavaScript Basics</li>
+      <li>C++ & Python</li>
+      <li>Small Web Projects & Mini-Games</li>
+      <li>Problem-Solving & Logical Thinking</li>
+    </ul>
+  </section>
+
+  <!-- hooby / Projects Section -->
+  <section id="work" class="work">
+    <h2>My Hobbies</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Passion for Programming and Web Development</h3>
+        <p>I am passionate about programming and web development, focusing on creating projects using HTML, CSS, C++, Python, and Java. Building software, websites, and applications is not just a skill for me it is the career path I am dedicated to. I enjoy learning new technologies, solving problems through code, and improving my abilities every day to become a skilled developer.</p>
+      </div>
+      <div class="project">
+        <h3>I am food fighter😂</h3>
+        <p>I absolutely love food—it's everything to me. Trying different dishes and flavors is one of my favorite things to do, and I enjoy exploring both traditional and new foods. For me, food is not just about eating; it is about enjoying the experience, sharing it with others, and discovering something delicious every time.</p>
+      </div>
+      <div class="project">
+        <h3>I enjoy by playing football</h3>
+        <p>I love playing football and usually play in the number 10 position. I am a huge fan of Messi and enjoy watching his skills on the field. When it comes to teams, I support Manchester United and follow their matches closely. Football is not just a hobby for me it is something that inspires and excites me every day.</p>
+      </div>
+      <div class="project">
+        <h3>Creating AI Tiktok videos</h3>
+        <p>Creating short videos in Amharic using Veo 3, featuring my character Baba by using AI voices.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>Services</h2>
+    <ul>
+      <li>Web Development (Beginner-Friendly Websites)</li>
+      <li>UI/UX Design (Simple Interactive Layouts)</li>
+      <li>Learning Assistance in Web Technologies</li>
+      <li>Small Interactive Apps & Games</li>
+    </ul>
+  </section>
+
+  <!-- Contact / Footer Section -->
+  <footer id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: aregaeyob3@gmail.com</p>
+    <p>Phone: +251 992 320 654</p>
+    <div class="social">
+      <a href="https://github.com/eyobarega-debug" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/eyob-arega-70258b280/" target="_blank">LinkedIn</a>
+      <a href="https://t.me/yob_bab10" target="_blank">Telegram</a>
+    </div>
+  </footer>
+    <script>
+  document.getElementById('download-page').addEventListener('click', function() {
+    const htmlContent = document.documentElement.outerHTML;
+
+    const blob = new Blob([htmlContent], { type: 'text/html' });
+    
+    const url = window.URL.createObjectURL(blob);
+
+    const link = document.createElement('a');
+
+    link.href = url;
+
+    link.download = 'eyob-portfolio.html'; 
+
+    document.body.appendChild(link);
+
+    link.click();
+
+    document.body.removeChild(link);
+
+    window.URL.revokeObjectURL(url);
+    
+    alert('Downloading your portfolio page... 📥');
+  });
+</script>
+</body>
+</html>

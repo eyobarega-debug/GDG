@@ -1,0 +1,165 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f0f8ff;
+}
+
+/* Navigation */
+header {
+  background-color: #4c4caf;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.navbar .logo {
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+}
+
+.hero .profile-pic {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  margin-bottom: 10px;
+}
+
+.hero .cv-button {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.hero .cv-button:hover {
+  background-color: #555;
+}
+
+/* About Section */
+.about {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.skills {
+  list-style: none;
+  padding: 0;
+}
+
+.skills li {
+  display: inline-block;
+  background-color: #4c4caf;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+/* Work / Projects */
+.work {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project {
+  background-color: #e0e0e0;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+}
+
+/* Services Section */
+.services {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services li {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+/* Footer / Contact */
+footer {
+  padding: 40px 20px;
+  background-color: #4c4caf;
+  color: white;
+  text-align: center;
+}
+
+footer .social a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer .social a:hover {
+  text-decoration: underline;
+}
+
+footer .fun-fact {
+  margin-top: 15px;
+  font-style: italic;
+}
